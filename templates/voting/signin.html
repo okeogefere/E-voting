@@ -1,0 +1,15 @@
+{% extends 'voting/base.html' %}
+{% load static %}
+{% block content %}
+
+
+            <form action="" method="POST"> {% csrf_token %}
+                <label for="name">Username</label>
+                <input type="text" id="name" name="username" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="name" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+    {% endblock %}
